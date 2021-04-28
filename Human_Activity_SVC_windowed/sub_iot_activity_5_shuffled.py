@@ -18,7 +18,7 @@ df_source = pd.DataFrame(columns=['time','x1','x2', 'x3'])
 df_out = pd.DataFrame(columns=['time', 'activity'])
 
 #select trained model
-with open('SVM_Activity_model_window5_new_all.pkl', 'rb') as f:
+with open('SVM_Activity_model_window5_new_all_shuffled.pkl', 'rb') as f:
     clf = pickle.load(f)
 
 #create function that form slding window data in batch where w = window_size, o = striding unit
